@@ -39,5 +39,7 @@ heroku login
 heroku create --buildpack heroku/python
 heroku config:set DISABLE_COLLECTSTATIC=1
 git push heroku master
+heroku config:add VERIFY_TOKEN=your_verification_token_here
+heroku config:add PAGE_ACCESS_TOKEN=your_page_token_here
 heroku logs
 ```
